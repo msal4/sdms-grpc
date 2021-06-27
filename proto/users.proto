@@ -35,10 +35,21 @@ message UserRole {
 message AddUserRequest {
     Role role = 1;
     string name = 2;
+    string image = 3;
 }
 
 message DeleteUserRequest {
     string id = 1;
+}
+
+message Subject {
+    string id = 1;
+    string name = 2;
+    string details = 3;
+    string syllabus = 4;
+    int32 semester = 5;
+    int32 stage = 6;
+    User lecturer = 7;
 }
 
 message ListUsersRequest {
